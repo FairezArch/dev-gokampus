@@ -19,11 +19,12 @@ class UserSeeder extends Seeder
         /**
          * Create user and set role
          */
-        User::create([
+        $save = User::create([
             'name' => 'Administrator',
             'email' => 'admin@admin.com',
             'password' => Hash::make('password'),
         ]);
-    
+        
+        $save->assignRole('administrator');
     }
 }
