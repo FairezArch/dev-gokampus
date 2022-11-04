@@ -1,0 +1,181 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "gokampus",
+    "dateExported": "2022-11-04T00:34:01.202Z",
+    "version": "1.1",
+    "folders": [{
+            "_id": "f97dceb6-d425-4133-bcfa-39583bba4b1f",
+            "name": "auth",
+            "containerId": "",
+            "created": "2022-11-03T10:24:39.752Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "post",
+            "containerId": "",
+            "created": "2022-11-03T10:25:11.734Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [{
+            "_id": "f0a21906-ab7b-486d-956d-0267944b698f",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "all-post",
+            "url": "{{base_url}}/posts",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-11-03T10:25:26.182Z",
+            "modified": "2022-11-04T00:31:21.477Z",
+            "headers": [{ "name": "Accept", "value": "application/json" }],
+            "params": [],
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        },
+        {
+            "_id": "839b5621-6823-44ca-9294-87d9c4623946",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "f97dceb6-d425-4133-bcfa-39583bba4b1f",
+            "name": "login",
+            "url": "{{base_url}}/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-11-03T12:04:44.548Z",
+            "modified": "2022-11-04T00:32:04.727Z",
+            "headers": [{ "name": "Accept", "value": "application/json" }],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    { "name": "email", "value": "admin@admin.com" },
+                    { "name": "password", "value": "password" }
+                ]
+            },
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        },
+        {
+            "_id": "0bcc871a-6fea-409e-b425-7c1386f098ab",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "f97dceb6-d425-4133-bcfa-39583bba4b1f",
+            "name": "logout",
+            "url": "{{base_url}}/auth/logout",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2022-11-03T12:11:25.452Z",
+            "modified": "2022-11-04T00:32:08.739Z",
+            "headers": [{ "name": "Accept", "value": "application/json" }],
+            "params": [],
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        },
+        {
+            "_id": "0402d456-6672-40c3-885a-0dc42255d471",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "new-post",
+            "url": "{{base_url}}/posts",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2022-11-03T21:09:27.922Z",
+            "modified": "2022-11-04T00:31:26.291Z",
+            "headers": [{ "name": "Accept", "value": "application/json" }],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    { "name": "title", "value": "Postingan Request 5" },
+                    { "name": "content", "value": "Test form request 5" },
+                    { "name": "acticle_creator", "value": "John Doe 5" }
+                ],
+                "files": [{
+                    "name": "acticle_image",
+                    "value": "c:\\Users\\croket\\Pictures\\Testing image\\739820220731080420.jpeg"
+                }]
+            },
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        },
+        {
+            "_id": "216a6cd2-33fc-43d8-bc57-9bf476482e71",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "view-image",
+            "url": "{{image_url}}/storage/posts/6bnCZnkiMJLeOD8n0jmamJE2h1g8TQq858ilbKRY.png",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2022-11-03T23:22:21.044Z",
+            "modified": "2022-11-04T00:31:12.128Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "32569867-ad2e-4037-b7b7-2907c46d30d5",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "update-post",
+            "url": "{{base_url}}/posts/2",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2022-11-03T23:40:57.522Z",
+            "modified": "2022-11-04T00:31:32.419Z",
+            "headers": [{ "name": "Accept", "value": "application/json" }],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    { "name": "_method", "value": "PUT" },
+                    { "name": "title", "value": "Update ke 2.2" },
+                    { "name": "content", "value": "Update content 2.2" },
+                    { "name": "acticle_creator", "value": "Rahman 2.2" }
+                ],
+                "files": [{
+                    "name": "acticle_image",
+                    "value": "c:\\Users\\croket\\Pictures\\Testing image\\169820220730155243.jpg"
+                }]
+            },
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        },
+        {
+            "_id": "b3f1c76d-e94e-4f9b-b2fb-7a4779c3b65e",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "detail-post",
+            "url": "{{base_url}}/posts/3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2022-11-04T00:19:20.931Z",
+            "modified": "2022-11-04T00:31:43.009Z",
+            "headers": [],
+            "params": [],
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        },
+        {
+            "_id": "40688efd-b19d-4333-92ab-f390be666307",
+            "colId": "9032477d-b22c-41e0-90b8-78b13d414a34",
+            "containerId": "66bd9aea-4ab2-4440-8bff-b91f3a413748",
+            "name": "delete-post",
+            "url": "{{base_url}}/posts/2",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2022-11-04T00:21:40.267Z",
+            "modified": "2022-11-04T00:31:59.080Z",
+            "headers": [],
+            "params": [],
+            "auth": { "type": "bearer", "bearer": "{{token}}" },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [],
+        "tests": [],
+        "envId": "61976f89-5a00-4c45-9db4-4ffa7d492095"
+    }
+}
