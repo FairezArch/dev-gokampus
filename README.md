@@ -21,13 +21,33 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Setup Testing
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Installing Composer
+- composer install
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Migrate database and seeder
+- php artisan migrate --seed
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Setup storage link for file upload
+- php artisan storage:link
+
+Generate event
+- php artisan event:generate
+
+Run laravel
+- php artisan serve
+
+## Setup Testing API
+
+* Using Thunder Client
+
+* import collection and env
+- import file in thunder-client thunder-collection_gokampus for collection
+- import file in thunder-environment_gokampus-testing for env
+
+* Set env for collection
+- Open settings in file thunder-client thunder-collection_gokampus -> Environment -> select Environment 'gokampus-testing'
 
 ## Laravel Sponsors
 

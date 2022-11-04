@@ -1,0 +1,11 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "gokampus-testing",
+    "dateExported": "2022-11-04T00:34:09.480Z",
+    "version": "1.0",
+    "variables": [
+        { "name": "base_url", "value": "http://127.0.0.1:8000/api" },
+        { "name": "token", "value": "8|DVnJqJDBm9k9kRPvKqzUSOVcFxjctCwy1cSnhdIy" },
+        { "name": "image_url", "value": "http://127.0.0.1:8000" }
+    ]
+}
